@@ -43,7 +43,7 @@
         .img_foot {
             width: 70px;
             height: 60px;
-        
+
         }
 
         .git {
@@ -62,12 +62,32 @@
                 margin: auto;
                 padding: auto;
             }
+
+            #contact {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .col-xs-6.col-sm-6.col-lg-2 {
+                text-align: center;
+            }
         }
+
         @media only screen and (max-width: 576px) {
-    .col-xs-6{
-        width: 50%;
-    }
-}
+            .col-xs-6 {
+                width: 50%;
+            }
+
+            #contact {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .col-xs-6.col-sm-6.col-lg-2 {
+                text-align: center;
+            }
+        }
+
         .nav.nav-pills.flex-column.flex-sm-row {
             text-align: center;
             font-size: 22px;
@@ -87,71 +107,86 @@
         h1 {
             text-align: center;
         }
-        h5{
+
+        h5 {
             text-align: left;
         }
-        .tab{
+
+        .tab {
             display: inline-block;
             margin-left: 20px;
             text-align: left;
         }
+
         .col-xs-12.col-sm-6.col-lg-6.img_win {
             text-align: center;
         }
-        .win{
+
+        .win {
             position: relative;
             animation-name: win;
             animation-duration: 3s;
         }
-        .it{
+
+        .it {
             position: relative;
             animation-name: it;
             animation-duration: 3s;
-            
+
         }
-        .oph{
+
+        .oph {
             position: relative;
             animation-name: oph;
             animation-duration: 3s;
         }
-        @keyframes win{
-            0%{
+
+        @keyframes win {
+            0% {
                 transform: rotate(360deg);
                 left: -30vw;
             }
-            100%{
+
+            100% {
                 left: 0vw;
             }
 
         }
-        @keyframes it{
-            0%{
+
+        @keyframes it {
+            0% {
                 transform: rotate(360deg);
                 left: -30vw;
             }
-            100%{
+
+            100% {
                 left: 0vw;
             }
         }
-        @keyframes oph{
-            0%{
+
+        @keyframes oph {
+            0% {
                 transform: rotate(360deg);
                 right: -50vw;
             }
-            100%{
+
+            100% {
                 right: 0vw;
             }
         }
+
         @media only screen and (max-width: 576px) {
-            .col-xs-12.col-sm-6.col-lg-6{
+            .col-xs-12.col-sm-6.col-lg-6 {
                 text-align: center;
             }
 
         }
+
         .toggleNav {
             display: none;
         }
-        a{
+
+        a {
             color: white;
             text-align: center;
         }
@@ -174,6 +209,15 @@
                 margin: auto;
                 padding: auto;
             }
+
+            #contact {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .col-xs-6.col-sm-6.col-lg-2 {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -181,18 +225,18 @@
 <body>
     <h1>Protfolilo</h1>
     <p>
-        <nav class="nav nav-pills flex-column flex-sm-row flex-nav">
-            <a href="#" class="toggleNav">Menu</a>
-            <ul class="row">
-                <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="index.html">DETAIL</a></li>
-                <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link active" href="Profile.html">PROFILE</a></li>
-                <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link"
-                        href="Activity.html">ACTIVITY</a></li>
-                <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Certificates.html">CERTIFICATE</a>
-                </li>
-                <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Project.html">PROJECT</a></li>
-            </ul>
-        </nav>
+    <nav class="nav nav-pills flex-column flex-sm-row flex-nav">
+        <a href="#" class="toggleNav">Menu</a>
+        <ul class="row">
+            <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="index.html">DETAIL</a></li>
+            <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link active" href="Profile.html">PROFILE</a>
+            </li>
+            <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Activity.html">ACTIVITY</a></li>
+            <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Certificates.html">CERTIFICATE</a>
+            </li>
+            <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Project.html">PROJECT</a></li>
+        </ul>
+    </nav>
     <p>
 
 
@@ -201,16 +245,17 @@
 
 
 
-           
+
             <li class="col-xs-12 col-sm-6 col-lg-6 img_win" id="skill">
-                <img class = "win" src="img/win.jpg" alt="">
+                <img class="win" src="img/win.jpg" alt="">
             </li>
 
             <li class="col-xs-12 col-sm-6 col-lg-6" id="description">
                 <h5><u>Name:</u><span class="tab"></span> Naruebes Lueangrungudom<br>
                     <u>Birthday :</u><span class="tab"></span> 20 December 1999<br>
                     <u>Age:</u><span class="tab"></span> 21 years<br>
-                    <u>Education:</u><span class="tab"></span> Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang<br>
+                    <u>Education:</u><span class="tab"></span> Faculty of Information Technology, King Mongkut's
+                    Institute of Technology Ladkrabang<br>
                     <u>Gender:</u><span class="tab"></span> Male<br>
                     <u>Marriage:</u><span class="tab"></span> Single<br>
                     <u>Height:</u><span class="tab"></span> 167 cm<br>
@@ -220,14 +265,14 @@
                     <u>Religion:</u><span class="tab"></span> Buddhism
                 </h5>
             </li>
-            
+
             <li class="col-xs-12 col-sm-6 col-lg-6 img_win" id="skill">
 
-                <img class = "it" src="img/it-logo.png" alt="">
+                <img class="it" src="img/it-logo.png" alt="">
             </li>
             <li class="col-xs-12 col-sm-6 col-lg-6" id="skill">
 
-                <img class = "oph" src="img/op2018_4.jpeg" alt="">
+                <img class="oph" src="img/op2018_4.jpeg" alt="">
             </li>
 
         </ul>
@@ -247,16 +292,18 @@
         <div class="flex-container">
             <ul class="row">
                 <li class="col-xs-12 col-sm-12 col-lg-2" id="contact">CONTACT</li>
-                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
-                        <img class = "img_foot " src="img/fk.png" alt="Facebook"></a></li>
-                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class = "img_foot " src="img/Mail.png"
-                            alt="E-mail"></a>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a
+                        href="https://www.facebook.com/profile.php?id=100005911452430">
+                        <img class="img_foot " src="img/fk.png" alt="Facebook"></a></li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class="img_foot "
+                            src="img/Mail.png" alt="E-mail"></a>
                 </li>
-                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class = "git" src="img/git.png"
-                            alt="Github"></a>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class="git"
+                            src="img/git.png" alt="Github"></a>
                 </li>
-                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class = "img_foot " src="img/in.png" 
-                    alt="Github"></a></li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a
+                        href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class="img_foot "
+                            src="img/in.png" alt="Github"></a></li>
             </ul>
         </div>
     </footer>

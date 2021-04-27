@@ -13,7 +13,7 @@
         crossorigin="anonymous"></script>
     <style>
         body {
-            background-color:puple;
+            background-color: puple;
             background-image: linear-gradient(rgba(194, 16, 248, 0.342), #0088ad9d);
             color: white;
         }
@@ -44,7 +44,7 @@
             text-align: center;
         }
 
-        a{
+        a {
             color: white;
             text-align: center;
         }
@@ -74,13 +74,13 @@
         .img_foot {
             width: 70px;
             height: 60px;
-            
+
         }
 
         .git {
             width: 65px;
             height: 50px;
-           
+
         }
 
         .col-xs {
@@ -104,9 +104,10 @@
         }
 
         .flex-sm-fill.text-sm-center.nav-link.active {
-            background-color:  #97b3df;
+            background-color: #97b3df;
 
         }
+
         .toggleNav {
             display: none;
         }
@@ -130,11 +131,36 @@
                 padding: auto;
             }
         }
+
         @media only screen and (max-width: 576px) {
-    .col-xs-6{
-        width: 50%;
-    }
-}
+            .col-xs-6 {
+                width: 50%;
+            }
+
+            #contact {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .col-xs-6.col-sm-6.col-lg-2 {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .col-xs-6 {
+                width: 50%;
+            }
+
+            #contact {
+                font-size: 30px;
+                text-align: center;
+            }
+
+            .col-xs-6.col-sm-6.col-lg-2 {
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -148,9 +174,9 @@
         <ul class="row">
             <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="index.html">DETAIL</a></li>
             <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Profile.html">PROFILE</a></li>
-            <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link"
-                    href="Activity.html">ACTIVITY</a></li>
-            <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link active" href="Certificates.html">CERTIFICATE</a>
+            <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Activity.html">ACTIVITY</a></li>
+            <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link active"
+                    href="Certificates.html">CERTIFICATE</a>
             </li>
             <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Project.html">PROJECT</a></li>
         </ul>
@@ -194,41 +220,43 @@
 
 
             <div class="col-xs-1 col-sm-6 col-lg-12">
-                <img id = "test" onclick= tests() src="certificate/1.jpg" alt="">
+                <img id="test" onclick=tests() src="certificate/1.jpg" alt="">
                 <h6>ได้รับจากการคืนแฟ้มเอกสาร</h6>
             </div>
         </div>
+    </div>
+    <p>
+    <footer>
+        <div class="flex-container">
+            <ul class="row">
+                <li class="col-xs-12 col-sm-12 col-lg-2" id="contact">CONTACT</li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a
+                        href="https://www.facebook.com/profile.php?id=100005911452430">
+                        <img class="img_foot " src="img/fk.png" alt="Facebook"></a></li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class="img_foot "
+                            src="img/Mail.png" alt="E-mail"></a>
+                </li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class="git"
+                            src="img/git.png" alt="Github"></a>
+                </li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a
+                        href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class="img_foot "
+                            src="img/in.png" alt="Github"></a></li>
+            </ul>
         </div>
-        <p>
-            <footer>
-                <div class="flex-container">
-                    <ul class="row">
-                        <li class="col-xs-12 col-sm-12 col-lg-2" id="contact">CONTACT</li>
-                        <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
-                                <img class = "img_foot " src="img/fk.png" alt="Facebook"></a></li>
-                        <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class = "img_foot " src="img/Mail.png"
-                                    alt="E-mail"></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class = "git" src="img/git.png"
-                                    alt="Github"></a>
-                        </li>
-                        <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class = "img_foot " src="img/in.png" 
-                            alt="Github"></a></li>
-                    </ul>
-                </div>
-            </footer>
-    
+    </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>
-    
-            $(function () {
-                $('.toggleNav').on('click', function () {
-                    $('.flex-nav ul').toggleClass('open');
-                });
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $('.toggleNav').on('click', function () {
+                $('.flex-nav ul').toggleClass('open');
             });
-    
-        </script>
+        });
+
+    </script>
 </body>
 
 </html>

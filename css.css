@@ -74,17 +74,17 @@ footer {
 .col-xs{
     text-align: left;
 }
-@media only screen and (min-width: 992px) {
-    .col-lg-12{
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    padding: auto;
-    }
-}
+
 @media only screen and (max-width: 576px) {
     .col-xs-6{
         width: 50%;
+    }
+    #contact {
+        font-size: 30px;
+        text-align: center;
+    }
+    .col-xs-6.col-sm-6.col-lg-2{
+        text-align: center;
     }
 }
 .nav.nav-pills.flex-column.flex-sm-row{
@@ -122,6 +122,20 @@ a{
         margin: auto;
         padding: auto;
     }
+    #contact {
+        font-size: 30px;
+        text-align: center;
+    }
+    .col-xs-6.col-sm-6.col-lg-2{
+        text-align: center;
+    }
+        .col-lg-12{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+        padding: auto;
+        }
+    
 }
 
 .contact {
