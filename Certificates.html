@@ -156,7 +156,7 @@
 
 
             <div class="col-xs-1 col-sm-6 col-lg-12">
-                <img id = "test" src="certificate/1.jpg" alt="">
+                <img id = "test" onclick= tests() src="certificate/1.jpg" alt="">
             </div>
         </div>
         </div>
@@ -185,18 +185,19 @@
                     <li class="col-xs col-sm-2 col-lg-2"><a
                             href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class="img_foot"
                                 src="img/in.png" alt="Github"></a></li>
-                                <ul><button id = "test"></button></ul>
-
-
+                                
                 </ul>
+
+           
             </div>
         </footer>
 
         <script>
-            var box = document.getElementById("test")
-            console.log(box)
-            box.onclick = function() {
-  modal.style.display = "block";
+
+            var box = document.getElementById("test");
+            console.log(box);
+            function tests() {
+  document.getElementById("test").innerHTML = "YOU CLICKED ME!";
 }
 
         </script>

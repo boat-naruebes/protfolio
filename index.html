@@ -26,7 +26,7 @@
             padding: auto;
             border-radius: 35%;
             animation-name: up;
-            animation-duration: 5s;
+            animation-duration: 6s;
            
 
         }
@@ -53,8 +53,9 @@
         }
 
         img {
-            width: 60px;
+            width: 70px;
             height: 60px;
+            border: solid 2px;
             
         }
 
@@ -65,14 +66,14 @@
 
 
         #description {
-            background-color: #01c8ff21;
+            background-color: #4c628123;
 
             
         }
 
         #skill {
 
-            background-color: #81d1e72d;
+            background-color: #94adcfa4;
 
             
         }
@@ -91,12 +92,13 @@
         }
 
         footer {
-            background-color:#c0f1ff55;
+            background-color:#c0f1ffa4;
             padding: 5px;
         }
         .git{
-            width: 65px;
-            height: 50px;
+            width: 70px;
+            height: 60px;
+            border: solid 2px;
         }
         .col-xs{
             text-align: left;
@@ -109,10 +111,15 @@
             padding: auto;
             }
         }
+        @media only screen and (max-width: 576px) {
+            .col-xs-6{
+                width: 50%;
+            }
+        }
         .nav.nav-pills.flex-column.flex-sm-row{
             text-align: center;
             font-size: 22px;
-            background-color: purple;
+            background-color: rgba(128, 0, 128, 0.548);
         }
         a{
             color: white;
@@ -174,16 +181,16 @@
     <footer>
         <div class="flex-container">
             <ul class="row">
-                <li class="col-xs col-sm-2 col-lg-2" id="contact">CONTACT</li>
-                <li class="col-xs col-sm-2 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
+                <li class="col-xs-12 col-sm-12 col-lg-2" id="contact">CONTACT</li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
                         <img src="img/fk.png" alt="Facebook"></a></li>
-                <li class="col-xs col-sm-2 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img src="img/Mail.png"
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img src="img/Mail.png"
                             alt="E-mail"></a>
                 </li>
-                <li class="col-xs col-sm-2 col-lg-2"><a href="https://github.com/boat-naruebes"><img class = "git" src="img/git.png"
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class = "git" src="img/git.png"
                             alt="Github"></a>
                 </li>
-                <li class="col-xs col-sm-2 col-lg-2"><a href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img src="img/in.png" 
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img src="img/in.png" 
                     alt="Github"></a></li>
             </ul>
         </div>

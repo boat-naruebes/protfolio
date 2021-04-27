@@ -81,9 +81,66 @@
         h1 {
             text-align: center;
         }
-
+        h5{
+            text-align: left;
+        }
+        .tab{
+            display: inline-block;
+            margin-left: 20px;
+            text-align: left;
+        }
         .col-xs-12.col-sm-6.col-lg-6.img_win {
             text-align: center;
+        }
+        .win{
+            position: relative;
+            animation-name: win;
+            animation-duration: 3s;
+        }
+        .it{
+            position: relative;
+            animation-name: it;
+            animation-duration: 3s;
+            
+        }
+        .oph{
+            position: relative;
+            animation-name: oph;
+            animation-duration: 3s;
+        }
+        @keyframes win{
+            0%{
+                transform: rotate(360deg);
+                left: -30vw;
+            }
+            100%{
+                left: 0vw;
+            }
+
+        }
+        @keyframes it{
+            0%{
+                transform: rotate(360deg);
+                left: -30vw;
+            }
+            100%{
+                left: 0vw;
+            }
+        }
+        @keyframes oph{
+            0%{
+                transform: rotate(360deg);
+                right: -50vw;
+            }
+            100%{
+                right: 0vw;
+            }
+        }
+        @media only screen and (max-width: 576px) {
+            .col-xs-12.col-sm-6.col-lg-6{
+                text-align: center;
+            }
+
         }
     </style>
 </head>
@@ -108,31 +165,31 @@
 
            
             <li class="col-xs-12 col-sm-6 col-lg-6 img_win" id="skill">
-                <img src="img/win.jpg" alt="">
+                <img class = "win" src="img/win.jpg" alt="">
             </li>
 
             <li class="col-xs-12 col-sm-6 col-lg-6" id="description">
-                <h5>Name: Naruebes Lueangrungudom<br>
-                    Birthday : 20 December 1999<br>
-                    Age: 21 years<br>
-                    Education: Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang<br>
-                    Gender: Male<br>
-                    Marriage: Single<br>
-                    Height: 167 cm<br>
-                    Weight: 45 kg<br>
-                    Adress: 325/2 No.5, Ban Suan, Chonburi,20000<br>
-                    Nationality: THAILAND<br>
-                    Religion: Buddhism
+                <h5><u>Name:</u><span class="tab"></span> Naruebes Lueangrungudom<br>
+                    <u>Birthday :</u><span class="tab"></span> 20 December 1999<br>
+                    <u>Age:</u><span class="tab"></span> 21 years<br>
+                    <u>Education:</u><span class="tab"></span> Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang<br>
+                    <u>Gender:</u><span class="tab"></span> Male<br>
+                    <u>Marriage:</u><span class="tab"></span> Single<br>
+                    <u>Height:</u><span class="tab"></span> 167 cm<br>
+                    <u>Weight:</u><span class="tab"></span> 45 kg<br>
+                    <u>Adress:</u><span class="tab"></span> 325/2 No.5, Ban Suan, Chonburi,20000<br>
+                    <u>Nationality:</u><span class="tab"></span> THAILAND<br>
+                    <u>Religion:</u><span class="tab"></span> Buddhism
                 </h5>
             </li>
             
             <li class="col-xs-12 col-sm-6 col-lg-6 img_win" id="skill">
 
-                <img src="img/it-logo.png" alt="">
+                <img class = "it" src="img/it-logo.png" alt="">
             </li>
             <li class="col-xs-12 col-sm-6 col-lg-6" id="skill">
 
-                <img src="img/op2018_4.jpeg" alt="">
+                <img class = "oph" src="img/op2018_4.jpeg" alt="">
             </li>
 
         </ul>
