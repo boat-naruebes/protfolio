@@ -17,6 +17,9 @@
             background-image: linear-gradient(rgba(194, 16, 248, 0.342), #0088ad9d);
             color: white;
         }
+        a{
+            color: white;
+        }
 
         #contact {
             font-size: 30px;
@@ -65,7 +68,7 @@
         .nav.nav-pills.flex-column.flex-sm-row {
             text-align: center;
             font-size: 22px;
-            background-color: purple;
+            background-color: rgba(128, 0, 128, 0.548);
         }
 
         .flex-sm-fill.text-sm-center.nav-link.active {
@@ -142,19 +145,47 @@
             }
 
         }
+        .toggleNav {
+            display: none;
+        }
+
+        @media all and (max-width:992px) {
+            .flex-nav ul.open {
+                display: flex;
+            }
+
+            .flex-nav ul {
+                display: none;
+            }
+
+            .flex-nav ul li {
+                width: 100%;
+            }
+
+            .toggleNav {
+                display: block;
+                margin: auto;
+                padding: auto;
+            }
+        }
     </style>
 </head>
 
 <body>
     <h1>Protfolilo</h1>
     <p>
-    <nav class="nav nav-pills flex-column flex-sm-row">
-        <a class="flex-sm-fill text-sm-center nav-link" href="index.html">DETAIL</a>
-        <a class="flex-sm-fill text-sm-center nav-link active" href="Profile.html">PROFILE</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="Activity.html">ACTIVITY</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="Certificates.html">CERTIFICATE</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="Project.html">PROJECT</a>
-    </nav>
+        <nav class="nav nav-pills flex-column flex-sm-row flex-nav">
+            <a href="#" class="toggleNav">Menu</a>
+            <ul class="row">
+                <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="index.html">DETAIL</a></li>
+                <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link active" href="Profile.html">PROFILE</a></li>
+                <li class="  col-lg"><a class="flex-sm-fill text-sm-center nav-link"
+                        href="Activity.html">ACTIVITY</a></li>
+                <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Certificates.html">CERTIFICATE</a>
+                </li>
+                <li class=" col-lg"><a class="flex-sm-fill text-sm-center nav-link" href="Project.html">PROJECT</a></li>
+            </ul>
+        </nav>
     <p>
 
 
@@ -226,6 +257,16 @@
             </ul>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $('.toggleNav').on('click', function () {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+
+    </script>
 </body>
 
 </html>

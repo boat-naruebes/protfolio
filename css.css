@@ -1,0 +1,243 @@
+body {
+    background-color:puple;
+    background-image: linear-gradient(rgba(194, 16, 248, 0.342), #0088ad9d);
+    color: white;
+}
+.profile {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: auto;
+    border-radius: 35%;
+    animation-name: up;
+    animation-duration: 6s;
+   
+
+}
+@keyframes up {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        
+    }
+
+}
+
+h1 {
+    text-align: center;
+}
+img {
+    width: 70px;
+    height: 60px;
+    border: solid 2px;   
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+}
+
+
+#description {
+    background-color: #4c628123;
+
+    
+}
+
+#skill {
+
+    background-color: #94adcfa4;
+
+    
+}
+
+#contact {
+    font-size: 30px;
+    text-align: left;
+}
+
+h4 {
+    
+    text-align: center;
+}
+.col-xs-12.col-sm-6.col-lg-6{
+    text-align: left;
+}
+
+footer {
+    background-color:#c0f1ffa4;
+    padding: 5px;
+}
+.git{
+    width: 70px;
+    height: 60px;
+    border: solid 2px;
+}
+.col-xs{
+    text-align: left;
+}
+@media only screen and (min-width: 992px) {
+    .col-lg-12{
+        text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: auto;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .col-xs-6{
+        width: 50%;
+    }
+}
+.nav.nav-pills.flex-column.flex-sm-row{
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(128, 0, 128, 0.548);
+}
+a{
+    color: white;
+}
+.flex-sm-fill.text-sm-center.nav-link.active{
+    background-color: #97b3df;
+    
+}
+.toggleNav {
+    display: none;
+}
+
+@media all and (max-width:992px) {
+    .flex-nav ul.open {
+        display: flex;
+    }
+
+    .flex-nav ul {
+        display: none;
+    }
+
+    .flex-nav ul li {
+        width: 100%;
+    }
+
+    .toggleNav {
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+}
+
+
+
+
+
+
+.contact {
+    width: 5%;
+}
+
+#contact {
+    font-size: 30px;
+    text-align: left;
+}
+
+img {
+    width: 85%;
+    height: 75%;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+footer {
+    background-color: #c0f1ff55;
+    padding: 5px;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+
+}
+
+.img_foot {
+    width: 60px;
+    height: 60px;
+}
+
+.git {
+    width: 65px;
+    height: 50px;
+}
+
+.nav.nav-pills.flex-column.flex-sm-row {
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(128, 0, 128, 0.548);
+
+}
+
+.flex-sm-fill.text-sm-center.nav-link.active {
+    background-color: red;
+}
+
+.col-xs-1.col-sm-6.col-lg-6 {
+    text-align: center;
+}
+
+.col-xs-1.col-sm-6.col-lg-4 {
+    text-align: center;
+}
+
+.oph {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 20px;
+}
+
+.flex-sm-fill.text-sm-center.nav-link.active {
+    background-color: #97b3df;
+
+}
+
+.col-xs-1.col-sm-12.col-lg-4 {
+    text-align: center;
+}
+
+.toggleNav {
+    display: none;
+}
+a{
+    color: white;
+}
+
+@media all and (max-width:992px) {
+    .flex-nav ul.open {
+        display: flex;
+    }
+
+    .flex-nav ul {
+        display: none;
+    }
+
+    .flex-nav ul li {
+        width: 100%;
+    }
+
+    .toggleNav {
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+}
