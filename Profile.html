@@ -17,9 +17,7 @@
             background-image: linear-gradient(rgba(194, 16, 248, 0.342), #0088ad9d);
             color: white;
         }
-        a{
-            color: white;
-        }
+
 
         #contact {
             font-size: 30px;
@@ -43,8 +41,9 @@
         }
 
         .img_foot {
-            width: 60px;
+            width: 70px;
             height: 60px;
+        
         }
 
         .git {
@@ -64,7 +63,11 @@
                 padding: auto;
             }
         }
-
+        @media only screen and (max-width: 576px) {
+    .col-xs-6{
+        width: 50%;
+    }
+}
         .nav.nav-pills.flex-column.flex-sm-row {
             text-align: center;
             font-size: 22px;
@@ -147,6 +150,10 @@
         }
         .toggleNav {
             display: none;
+        }
+        a{
+            color: white;
+            text-align: center;
         }
 
         @media all and (max-width:992px) {
@@ -236,27 +243,24 @@
 
 
 
-
     <footer>
         <div class="flex-container">
             <ul class="row">
-                <li class="col-xs col-sm-3 col-lg-2" id="contact">CONTACT</li>
-                <li class="col-xs col-sm-3 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
-                        <img class="img_foot" src="img/fk.png" alt="Facebook"></a></li>
-                <li class="col-xs col-sm-3 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class="img_foot"
-                            src="img/Mail.png" alt="E-mail"></a>
+                <li class="col-xs-12 col-sm-12 col-lg-2" id="contact">CONTACT</li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
+                        <img class = "img_foot " src="img/fk.png" alt="Facebook"></a></li>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class = "img_foot " src="img/Mail.png"
+                            alt="E-mail"></a>
                 </li>
-                <li class="col-xs col-sm-3 col-lg-2"><a href="https://github.com/boat-naruebes"><img class="git"
-                            src="img/git.png" alt="Github"></a>
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class = "git" src="img/git.png"
+                            alt="Github"></a>
                 </li>
-                <li class="col-xs col-sm-3 col-lg-2"><a
-                        href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class="img_foot"
-                            src="img/in.png" alt="Github"></a></li>
-
-
+                <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class = "img_foot " src="img/in.png" 
+                    alt="Github"></a></li>
             </ul>
         </div>
     </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
 

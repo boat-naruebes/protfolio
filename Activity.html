@@ -11,118 +11,79 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css.css">
     <style>
-        body {
-            background-color: puple;
-            background-image: linear-gradient(rgba(194, 16, 248, 0.342), #0088ad9d);
-            color: white;
-        }
+      .contact {
+    width: 5%;
+}
+img {
+    width: 85%;
+    height: 75%;
+}
+footer {
+    background-color: #c0f1ff55;
+    padding: 5px;
+}
+ul {
+    width: 100%;
+    list-style: none;
 
-
-        .contact {
-            width: 5%;
-        }
-
-        #contact {
-            font-size: 30px;
-            text-align: left;
-        }
-
-        img {
-            width: 85%;
-            height: 75%;
-        }
-
-
-        h1 {
-            text-align: center;
-        }
-
-
-
-        footer {
-            background-color: #c0f1ff55;
-            padding: 5px;
-        }
-
-        ul {
-            width: 100%;
-            list-style: none;
-
-        }
-
-        .img_foot {
-            width: 60px;
+}
+.img_foot {
+    width: 70px;
             height: 60px;
-        }
+            
+}
+.nav.nav-pills.flex-column.flex-sm-row {
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(128, 0, 128, 0.548);
 
-        .git {
-            width: 65px;
-            height: 50px;
-        }
+}
+.col-xs-1.col-sm-6.col-lg-6 {
+    text-align: center;
+}
 
-        .nav.nav-pills.flex-column.flex-sm-row {
-            text-align: center;
-            font-size: 22px;
-            background-color: rgba(128, 0, 128, 0.548);
+.col-xs-1.col-sm-6.col-lg-4 {
+    text-align: center;
+}
 
-        }
+.oph {
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+h6 {
+    font-size: 20px;
+}
+.col-xs-1.col-sm-12.col-lg-4 {
+    text-align: center;
+}
 
-        .flex-sm-fill.text-sm-center.nav-link.active {
-            background-color: red;
-        }
+.toggleNav {
+    display: none;
+}
 
-        .col-xs-1.col-sm-6.col-lg-6 {
-            text-align: center;
-        }
+@media all and (max-width:992px) {
+    .flex-nav ul.open {
+        display: flex;
+    }
 
-        .col-xs-1.col-sm-6.col-lg-4 {
-            text-align: center;
-        }
+    .flex-nav ul {
+        display: none;
+    }
 
-        .oph {
-            position: relative;
-            bottom: 50px;
-            text-align: center;
-            font-size: 20px;
-        }
+    .flex-nav ul li {
+        width: 100%;
+    }
 
-        h6 {
-            font-size: 20px;
-        }
-
-        .flex-sm-fill.text-sm-center.nav-link.active {
-            background-color: #97b3df;
-
-        }
-
-        .col-xs-1.col-sm-12.col-lg-4 {
-            text-align: center;
-        }
-
-        .toggleNav {
-            display: none;
-        }
-
-        @media all and (max-width:992px) {
-            .flex-nav ul.open {
-                display: flex;
-            }
-
-            .flex-nav ul {
-                display: none;
-            }
-
-            .flex-nav ul li {
-                width: 100%;
-            }
-
-            .toggleNav {
-                display: block;
-                margin: auto;
-                padding: auto;
-            }
-        }
+    .toggleNav {
+        display: block;
+        margin: auto;
+        padding: auto;
+    }
+}
     </style>
 </head>
 <body>
@@ -177,28 +138,23 @@
 
     <h6 class="oph">ช่วยงาน open house 2019 เป็น staff อยู่ฝ่ายบรรยายหลักสูตรและแนะแนวหลักสูตร ช่วยควบคุมแสงไฟ
         สร้างฉากและแนะแนวหลักสูตร</h6>
-        
-    <footer>
-        <div class="flex-container">
-            <ul class="row">
-                <li class="col-xs col-sm-3 col-lg-2" id="contact">CONTACT</li>
-                <li class="col-xs col-sm-3 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
-                        <img class="img_foot" src="img/fk.png" alt="Facebook"></a></li>
-                <li class="col-xs col-sm-3 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class="img_foot"
-                            src="img/Mail.png" alt="E-mail"></a>
-                </li>
-                <li class="col-xs col-sm-3 col-lg-2"><a href="https://github.com/boat-naruebes"><img class="git"
-                            src="img/git.png" alt="Github"></a>
-                </li>
-                <li class="col-xs col-sm-3 col-lg-2"><a
-                        href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class="img_foot"
-                            src="img/in.png" alt="Github"></a></li>
-
-
-            </ul>
-        </div>
-    </footer>
-
+        <footer>
+            <div class="flex-container">
+                <ul class="row">
+                    <li class="col-xs-12 col-sm-12 col-lg-2" id="contact">CONTACT</li>
+                    <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.facebook.com/profile.php?id=100005911452430">
+                            <img class = "img_foot " src="img/fk.png" alt="Facebook"></a></li>
+                    <li class="col-xs-6 col-sm-6 col-lg-2"><a href="mailto:boat-naruebes@outlook.com"><img class = "img_foot " src="img/Mail.png"
+                                alt="E-mail"></a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://github.com/boat-naruebes"><img class = "git" src="img/git.png"
+                                alt="Github"></a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6 col-lg-2"><a href="https://www.linkedin.com/in/naruebes-lueangrungudom-4289a0210/"><img class = "img_foot " src="img/in.png" 
+                        alt="Github"></a></li>
+                </ul>
+            </div>
+        </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
